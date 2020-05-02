@@ -13,7 +13,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
-import { NavigationComponent } from './navigation/navigation.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -22,12 +21,12 @@ import { MatListModule } from '@angular/material/list';
   declarations: [
     AppComponent,
     DashboardComponent,
-    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // DashboardModule,
     MatSliderModule,
     MatGridListModule,
     MatCardModule,
@@ -37,7 +36,8 @@ import { MatListModule } from '@angular/material/list';
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    // ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
