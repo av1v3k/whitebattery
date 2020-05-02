@@ -1,5 +1,7 @@
 # WhiteBattery
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b98d90e-a232-43ce-9cf5-fc96007fc813/deploy-status)](https://app.netlify.com/sites/festive-kirch-a9baf5/deploys)
+
 Portal Built with Angular.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
