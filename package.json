@@ -4,18 +4,21 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --source-map=false --verbose --prod --output-hashing=none",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "clean:dist": "rimraf dist"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.3",
+    "@angular/cdk": "^9.2.0",
     "@angular/common": "~9.0.3",
     "@angular/compiler": "~9.0.3",
     "@angular/core": "~9.0.3",
     "@angular/forms": "~9.0.3",
+    "@angular/material": "^9.2.0",
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/router": "~9.0.3",
