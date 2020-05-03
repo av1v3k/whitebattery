@@ -5,6 +5,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
+declare let gtag: Function;
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -24,6 +25,7 @@ export class AppComponent {
         router.events.subscribe((e) => {
             if (e instanceof NavigationEnd) {
                 console.log(e);
+                gtag('config', 'UA-165267061-1', { 'page_path': e.urlAfterRedirects });
                 this.drawerRef.close();
             }
         })
